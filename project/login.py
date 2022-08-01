@@ -65,14 +65,16 @@ def main():
     if st.checkbox('Influencer'):
         c.execute('SELECT product_name,info,launch_date,username FROM userstable')
         show=c.fetchall()
+	j=0
         for i in show:
+	    j=j+1
             st.subheader("Product name:- {} ".format(i[0]))
             st.subheader("Info:- {} ".format(i[1]))
             st.subheader("Product launch date:- {} ".format((i[2])))   
             st.subheader("Comapny name:- {} ".format(i[3])) 
 
-            if st.checkbox('Bid'):
-                st.write('directed to the chatbox')
+            if st.checkbox('Bid{}'.format(j):
+                st.checkbox('Click here to chat with comapny')
                 chennel_id=st.text_input("provide your channel ID")
                 company_name=st.text_input("write the name of the company who posted above information")
                 if company_name:
@@ -189,7 +191,7 @@ def main():
     elif choice=="Sign up Here":
         st.sidebar.title("Create account here")
         
-        username=st.sidebar.text_input("User Name")
+        username=st.sidebar.text_input("Company Name")
         email=st.sidebar.text_input("Enter Email")
         password=st.sidebar.text_input("Password",type="password")
         confirmpassword=st.sidebar.text_input("ConfirmPassword",type="password")
