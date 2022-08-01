@@ -1,3 +1,2 @@
 streamlit==0.75.0
-pip install --upgrade pip
-pip install google-api-python-client
+google-api-python-client
