@@ -301,7 +301,8 @@ def scrape_comments_with_replies(fifty_comments_videos):
 
             df = pd.DataFrame({'Comment': [i[0] for i in box],'Likes': [i[1] for i in box], 'Reply Count': [i[2] for i in box]})
 
-        #df.to_csv('youtube-comments.csv', index=False, header=False)
+        #df.to_
+        ('youtube-comments.csv', index=False, header=False)
         return df
 
 
@@ -453,7 +454,7 @@ for value in data:
 from tensorflow.keras.layers import TextVectorization
 import tensorflow as tf
 model = tf.keras.models.load_model('project/toxicity.h5')
-df = pd.read_csv('final_data.csv')
+df = pd.read_csv('project/final_data.csv')
 X = df['comment_text']
 y = df[df.columns[3:]].values
 MAX_FEATURES = 20
