@@ -301,8 +301,7 @@ def scrape_comments_with_replies(fifty_comments_videos):
 
             df = pd.DataFrame({'Comment': [i[0] for i in box],'Likes': [i[1] for i in box], 'Reply Count': [i[2] for i in box]})
 
-        #df.to_
-        ('youtube-comments.csv', index=False, header=False)
+        #df.to_('youtube-comments.csv', index=False, header=False)
         return df
 
 
