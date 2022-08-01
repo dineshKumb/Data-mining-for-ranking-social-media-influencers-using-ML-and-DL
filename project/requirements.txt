@@ -11,7 +11,7 @@ xgboost
 textblob
 youtube_transcript_api
 keybert
-opencv==4.6. 0.66
+opencv==4.6.0.66
 pafy
 math
 random
