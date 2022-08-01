@@ -502,5 +502,5 @@ st.write('Sad: - {}%'.format(round((sum(sad)/len(sad))*100),2))
 st.write('Sexual explicit: - {}%'.format(round((sum(sexual_explicit)/len(sexual_explicit))*100),2))
 
 # --------------------------------------------------------------------------------------------------------------------------------
-
-
+if st.checkbox("Click here to recognise activities from the video"):
+  exec(open('project/activity_recognition.py').read())
