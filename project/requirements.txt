@@ -17,4 +17,3 @@ pafy
 moviepy
 youtube-dl
 pydot
-pillow==8.2.0
