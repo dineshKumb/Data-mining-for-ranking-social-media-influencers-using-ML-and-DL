@@ -76,7 +76,7 @@ def main():
             if st.checkbox('Bid{}'.format(j)):
                 st.checkbox('Click here to chat with comapny')
                 chennel_id=st.text_input("provide your channel ID")
-		st.write("Don't know your channel id? visit this site https://commentpicker.com/youtube-channel-id.php")
+                st.write("Don't know your channel id? visit this site https://commentpicker.com/youtube-channel-id.php")
                 company_name=st.text_input("write the name of the company who posted above information")
                 if company_name:
                     channelid_list()
