@@ -11,6 +11,8 @@ xgboost
 textblob
 youtube_transcript_api
 keybert
-opencv-python
+opencv-contrib-python
 pafy
 moviepy
+youtube-dl
+pydot
