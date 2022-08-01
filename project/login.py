@@ -1,4 +1,3 @@
-pip3 install google-api-python-client
 import streamlit as st
 from PIL import Image
 import pandas as pd
