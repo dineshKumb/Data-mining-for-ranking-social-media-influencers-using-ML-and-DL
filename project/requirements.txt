@@ -11,10 +11,10 @@ xgboost
 textblob
 youtube_transcript_api
 keybert
-opencv-contrib-python
+opencv-python==4.5.5.64
+opencv-contrib-python==4.5.5.62
 pafy
 moviepy
 youtube-dl
 pydot
-opencv-python==4.5.5.64
 pillow==8.2.0
