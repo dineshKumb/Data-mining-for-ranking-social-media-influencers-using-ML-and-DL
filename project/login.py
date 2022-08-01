@@ -183,7 +183,7 @@ def main():
                     a=st.text_input('Provide a Channel ID')
                     if st.checkbox('Analyze'):
                         channelID={'channelID':a}
-                        exec(open('API.py').read(),channelID)
+                        exec(open('project/API.py').read(),channelID)
 
             
             else:
