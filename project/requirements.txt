@@ -1,2 +1,12 @@
 streamlit==0.75.0
 google-api-python-client
+matplotlib
+numpy
+pandas
+sklearn
+keras
+tensorflow 
+plotly
+xgboost
+textblob
+youtube_transcript_api
