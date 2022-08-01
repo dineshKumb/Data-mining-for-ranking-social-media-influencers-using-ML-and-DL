@@ -440,7 +440,8 @@ st.write('This channel has {}% positive influence on the audience in recent days
 from youtube_transcript_api import YouTubeTranscriptApi as yta
 import re
 
-vid_id=video_ids1[0]
+vid_id=st.text_input('Please input a videoID to check the content quality of this channel')
+st.write('Make sure the subtitles of the video are enabled')
 data=yta.get_transcript(vid_id)
 
 script_data=[]
