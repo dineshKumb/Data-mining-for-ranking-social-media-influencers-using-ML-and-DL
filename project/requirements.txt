@@ -1,1 +1,2 @@
+-m pip install --upgrade pip
 pip install google-api-python-client
