@@ -12,7 +12,6 @@ textblob
 youtube_transcript_api
 keybert
 opencv-contrib-python
-libgl1-mesa-glx
 pafy
 moviepy
 youtube-dl
