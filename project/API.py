@@ -489,7 +489,7 @@ for i in script_data:
     sexual_explicit.append(res[0][9])
 
 st.subheader("Prediction of the Speech/Script quality of the video")
-st.write('Toxicity: - {}%'.format(round((sum(toxic)/len(toxic))*100),2))
+st.write('Toxicity: - {}%'.format(round((sum(toxic)/len(toxic))*5),3))
 st.write('Severe Toxicity: - {}%'.format(round((sum(severe_toxic)/len(severe_toxic))*100),2))
 st.write('Obscene: - {}%'.format(round((sum(obscene)/len(obscene))*100),2))
 st.write('Identity hate: - {}%'.format(round((sum(identity_hate)/len(identity_hate))*100),2))
