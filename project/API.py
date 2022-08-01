@@ -452,7 +452,7 @@ for value in data:
 
 from tensorflow.keras.layers import TextVectorization
 import tensorflow as tf
-model = tf.keras.models.load_model('toxicity.h5')
+model = tf.keras.models.load_model('project/toxicity.h5')
 df = pd.read_csv('final_data.csv')
 X = df['comment_text']
 y = df[df.columns[3:]].values
@@ -523,7 +523,7 @@ from tensorflow.keras.callbacks import EarlyStopping
 from tensorflow.keras.utils import plot_model
 
 from tensorflow import keras
-LRCN_model=keras.models.load_model('LRCN_model___Date_Time_2022_07_11__17_20_47.h5')
+LRCN_model=keras.models.load_model('project/LRCN_model___Date_Time_2022_07_11__17_20_47.h5')
 
 # Specify the height and width to which each video frame will be resized in our dataset.
 IMAGE_HEIGHT , IMAGE_WIDTH = 128, 128
@@ -563,7 +563,7 @@ def download_youtube_videos(youtube_video_url, output_directory):
      
 
 # Make the Output directory if it does not exist
-test_videos_directory = 'test_videos'
+test_videos_directory = 'project/test_videos'
 os.makedirs(test_videos_directory, exist_ok = True)
 
 def predict_single_action(video_file_path, SEQUENCE_LENGTH):
