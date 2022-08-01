@@ -13,6 +13,4 @@ youtube_transcript_api
 keybert
 opencv-python
 pafy
-math
-random
 moviepy
