@@ -32,25 +32,7 @@ def view_all_users():
 	data = c.fetchall()
 	return data
 
-def convertTobinary(photo):
-    with open(photo, 'rb') as f:
-        binarydata=f.read()
-    return binarydata
 
-# def tabel_list():
-#     c.execute('CREATE TABLE IF NOT EXISTS tabel_list(company_name TEXT)')
-
-# def add_tabel_name(company_name_):
-#     c.execute('INSERT INTO tabel_list(company_name) VALUES(?)',(company_name_))
-#     conn.commit()
-
-# c.execute('DROP TABLE userstable')
-# def create_product_info_table():
-#     c.execute('CREATE TABLE IF NOT EXISTS Productinfo(product_name TEXT, info TEXT, launch_date TEXT, product_image BLOB)')
-#     conn.commit()
-# c.execute('DROP TABLE tabel_list')
-# c.execute('DROP TABLE channelid_list')
-#st.set_page_config(page_title="Login Page", page_icon=":tada:", layout="wide")
 def channelid_list():
     c.execute('CREATE TABLE IF NOT EXISTS channelid_list(chennel_id TEXT, company_name TEXT)')
 
@@ -62,11 +44,12 @@ def main():
     st.subheader("Welcome...!")
     if st.checkbox('Influencer'):
         c.execute('SELECT product_name,info,launch_date,username FROM userstable')
-        show=c.fetchall()[0]
-        st.subheader("Product name:- {} ".format(show[0]))
-        st.subheader("Info:- {} ".format(show[1]))
-        st.subheader("Product launch date:- {} ".format(show[2]))   
-        st.subheader("Comapny name:- {} ".format(show[3])) 
+        show=c.fetchall()
+        for i in show:
+            st.subheader("Product name:- {} ".format(i[0]))
+            st.subheader("Info:- {} ".format(i[1]))
+            st.subheader("Product launch date:- {} ".format((i[2])))   
+            st.subheader("Comapny name:- {} ".format(i[3]))  
 
         if st.checkbox('Bid'):
             st.write('directed to the chatbox')
