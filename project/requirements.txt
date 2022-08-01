@@ -16,5 +16,4 @@ pafy
 moviepy
 youtube-dl
 pydot
-python3-opencv
 opencv-python
