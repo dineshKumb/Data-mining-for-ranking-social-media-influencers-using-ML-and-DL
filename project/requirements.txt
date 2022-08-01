@@ -17,6 +17,4 @@ moviepy
 youtube-dl
 pydot
 opencv-python==4.5.5.64
-opencv-python-headless==4.5.2.54
-opencv-contrib-python-headless
 pillow==8.2.0
