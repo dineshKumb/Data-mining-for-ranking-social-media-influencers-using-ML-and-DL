@@ -391,7 +391,7 @@ data={'year':[next_date.year],
      'day':[next_date.day]}
 A=pd.DataFrame(data)
 model2=xgboost.XGBRegressor()
-model2.load_model('View_model.json')
+model2.load_model('project/View_model.json')
 predicted_views=round(model2.predict(A)[0])
 avg_views=round((sum(video_dataset.Views)/len(video_dataset.Views)))
 if avg_views>predicted_views:
