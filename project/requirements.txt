@@ -12,7 +12,10 @@ textblob
 youtube_transcript_api
 keybert
 opencv-contrib-python
+libgl1
 pafy
 moviepy
 youtube-dl
 pydot
+python3-opencv
+opencv-python
