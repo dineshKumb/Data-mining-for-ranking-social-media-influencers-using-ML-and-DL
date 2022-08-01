@@ -1,7 +1,6 @@
+exec(open('feed.py')
 import streamlit as st
 from PIL import Image
-#DB Management
-pip install google-api-python-client
 from googleapiclient.discovery import build
 import pandas as pd
 import re
