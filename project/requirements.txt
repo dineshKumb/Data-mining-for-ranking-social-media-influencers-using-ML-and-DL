@@ -4,6 +4,7 @@ matplotlib
 numpy
 pandas
 sklearn
+scikit-learn
 keras
 tensorflow 
 plotly
@@ -11,8 +12,13 @@ xgboost
 textblob
 youtube_transcript_api
 keybert
-opencv-python==4.6.0.66
+opencv_python==4.6.0.66
+opencv-python-headless
 pafy
 moviepy
 youtube-dl
 pydot
+scipy
+numpy
+pytesseract
+nltk
