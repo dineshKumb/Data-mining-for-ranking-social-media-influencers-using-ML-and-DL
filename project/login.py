@@ -49,15 +49,14 @@ def main():
             st.subheader("Product name:- {} ".format(i[0]))
             st.subheader("Info:- {} ".format(i[1]))
             st.subheader("Product launch date:- {} ".format((i[2])))   
-            st.subheader("Comapny name:- {} ".format(i[3]))  
-
-            if st.checkbox('Bid'):
-            	st.write('directed to the chatbox')
-            	chennel_id=st.text_input("provide your channel ID")
-            	company_name=st.text_input("write the name of the company who posted above information")
-                if company_name:
-		    channelid_list()
-                    add_channel_id(chennel_id,company_name)
+            st.subheader("Comapny name:- {} ".format(i[3]))
+	    if st.checkbox('Bid'):
+		st.write('directed to the chatbox')
+                chennel_id=st.text_input("provide your channel ID")
+                company_name=st.text_input("write the name of the company who posted above information")
+		if company_name:
+			channelid_list()
+			add_channel_id(chennel_id,company_name)
     menu=["Home","Login","Sign up Here"]
     choice=st.sidebar.selectbox("Menu",menu)
 
