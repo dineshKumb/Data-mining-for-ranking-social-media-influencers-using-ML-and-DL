@@ -10,3 +10,4 @@ plotly
 xgboost
 textblob
 youtube_transcript_api
+keybert
