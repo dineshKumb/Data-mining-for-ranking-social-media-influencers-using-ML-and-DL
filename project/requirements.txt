@@ -12,3 +12,8 @@ textblob
 youtube_transcript_api
 keybert
 cv2
+pafy
+math
+random
+collections
+moviepy
