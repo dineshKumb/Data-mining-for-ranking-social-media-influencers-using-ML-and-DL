@@ -502,9 +502,10 @@ st.write('Sad: - {}%'.format(round((sum(sad)/len(sad))*100),2))
 st.write('Sexual explicit: - {}%'.format(round((sum(sexual_explicit)/len(sexual_explicit))*100),2))
 
 # --------------------------------------------------------------------------------------------------------------------------------
+st.subheader("Currently this feature throws error because streamlit cloud has some trouble regarding opencv dependencies")
 if st.checkbox("Click here to recognise activities from the video"):
   exec(open('project/activity_recognition.py').read())
-st.write("Currently this feature throws error because streamlit cloud has some trouble regarding opencv dependencies")
+
   
   
   
