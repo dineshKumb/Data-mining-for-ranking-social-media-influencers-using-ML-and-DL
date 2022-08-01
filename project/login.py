@@ -1,11 +1,10 @@
- 
+pip3 install google-api-python-client
 import streamlit as st
 from PIL import Image
 import pandas as pd
 import re
 import time
 import requests
-exec(open('feed.py')
 from googleapiclient.discovery import build
 api_key='AIzaSyDjF6w3QnVjpYhMjA6oIy3pf-12BKbMRgI'
 
