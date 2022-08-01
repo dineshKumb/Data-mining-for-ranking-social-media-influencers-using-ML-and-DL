@@ -11,9 +11,8 @@ xgboost
 textblob
 youtube_transcript_api
 keybert
-cv2
+opencv
 pafy
 math
 random
-collections
 moviepy
