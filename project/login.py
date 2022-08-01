@@ -116,7 +116,7 @@ def main():
                     c.execute('SELECT username FROM userstable WHERE email=? AND password=?',(email,password))
                     username1=c.fetchall()[0][0]
                     myvar={'username':username1}
-                    exec(open('profile.py').read(),myvar)
+#                     exec(open('profile.py').read(),myvar)
                                     
                 
                 elif task=="Find influencer":
